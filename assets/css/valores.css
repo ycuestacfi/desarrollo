@@ -1,0 +1,17 @@
+#section-valores {
+    position: relative;
+    top: 200px;
+    width: 80%;
+    height: 450px;
+    display: flex;
+  }
+#info-valores{
+    height: 250px;
+    width: 50%;
+    text-align: center;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    font-size: 26px;
+    top: 20%;
+}

@@ -1,0 +1,48 @@
+#section-historia {
+    position: relative;
+    top: 160px;
+    height: 500px;
+    width: 80%;
+    display: flex;
+  }
+  #info-historia {
+    width: 50%;
+    top: 35%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  #historia {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  #info-hitos {
+    position: relative;
+    height: 90%;
+    width: 65%;
+    right: 0;
+    flex-direction: column;
+    display: flex;
+  }
+#hitos{
+    
+    position: relative;
+    left: 8%;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--verde-corporativo);
+    
+}
+#figure-hitos {
+    height: 95%;
+    text-align: center;
+    width: 100%;
+    top: 7%;
+    position: relative;
+  }
+  #img-historia{
+    height: 100%;
+  }

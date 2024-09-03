@@ -40,7 +40,7 @@ main {
     flex: 1;
     display: flex;
     align-items: center;
-    flex-direction: column;
+   
 }
 
 /* Estilos para el navbar */
@@ -81,9 +81,7 @@ main {
 
 
 /* Iconos de certificación y banderas de idioma */
-#marca-aguaContainer {
-    display: none;
-}
+
 
 #idioma-container {
     position: absolute;

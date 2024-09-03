@@ -15,7 +15,9 @@
     --blanco-segundario: #f9f9f9;
 }
 
-
+main{
+  flex-direction: column;
+}
 .img-banners {
     display: inline-block;
     top: 0;
