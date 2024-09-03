@@ -1,0 +1,67 @@
+#section-contacto {
+    position: relative;
+    top: 250px;
+    width: 80%;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #article-1 {
+    position: relative;
+    flex-direction: column;
+    width: 45%;
+    height: 90%;
+    padding: 8px;
+    border-right: solid 2px var(--verde-corporativo);
+  }
+  #article-1 div p{
+    font-size: 20px;
+    font-weight: 4350;
+  }
+  #article-2 {
+    position: relative;
+    width: 40%;
+    height: 100%;
+  }
+  #formulario_contacto{
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+  }
+.input_contacto{
+    background-color: var(--azul-oscuro-contraste);
+    padding-left: 8px;
+    height: 50px;
+    border: none;
+    border-color: none;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: var(--blanco);
+}
+
+#descripcion-contacto{
+    margin: 0;
+    padding: 4px;
+    height: 35%;
+    overflow: auto;
+    resize: vertical;
+}
+#button-enviar-contacto{
+    background-color: var(--verde-corporativo);
+    position: relative;
+    color: var(--blanco);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 8px;
+    width: 30%;
+    height: 50px;
+    border-radius: 25px;
+    top: 2%;
+    left: 70%;
+    cursor: pointer;
+}
+#button-enviar-contacto:hover {
+    color: var(--azul-oscuro-contraste);
+    box-shadow: 0px 5px 0px var(--azul-oscuro-contraste);
+}
