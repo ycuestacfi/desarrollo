@@ -1,0 +1,116 @@
+/* css de forma*/
+.section-unidad{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 450px;
+    width: 80%;
+    
+}
+.article-unidad-1{
+    height: 100%;
+    width: 40%;
+    padding: 8px;
+    border-right: solid 2px var(--verde-corporativo);
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.article-unidad-2{
+    height: 100%;
+    width: 40%;
+}
+.figure-unidad{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.figure-unidad img{
+    height: 100%;
+}
+#talleres{
+    width: 50%;
+    .figure-unidad img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* css de proteger*/
+
+#section-proteger{
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: solid 2px var(--verde-corporativo);
+    width: 80%;
+    margin-bottom: 100px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+#article-proteger1{
+    width: 40%;
+    
+}
+#article-proteger1 p{
+    font-size: 24px;
+    font-weight: 600;
+    color:var(--azul-oscuro-contraste);
+}
+#article-proteger2{
+    border-top: solid 2px var(--verde-corporativo);
+    width: 40%;
+    
+}
+#article-proteger2 p{
+    font-size: 24px;
+    font-weight: 600;
+    color:var(--azul-oscuro-contraste);
+}
+#article-proteger3{
+    border-top: solid 2px var(--verde-corporativo);
+    margin-top: 10px;
+    width: 40%;
+    
+}
+#article-proteger3 p{
+    font-size: 24px;
+    font-weight: 600;
+    color:var(--azul-oscuro-contraste);
+}
+
+
+
+/* css de talleres*/
+
+#section-talleres{
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: solid 2px var(--verde-corporativo);
+    height: 450px;
+    width: 80%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+#section-talleres p{
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--azul-oscuro-contraste);
+    text-align: center;
+}
+
+
+
+/* css de renueva*/

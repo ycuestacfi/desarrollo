@@ -1,10 +1,20 @@
 .section-mision-vision{
     width: 40%;
     height:20px ;
-    background-color: red;
-    position: relative;
+    position: absolute;
     top: 200px;
 }
 #section-mision{
-    right: 25%;
+    left: 4%;
+}
+#section-vision{
+    left: 55%;
+}
+section p{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+section label{
+    font-size: 17px;
 }

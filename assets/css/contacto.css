@@ -1,11 +1,13 @@
 #section-contacto {
-    position: relative;
-    top: 250px;
-    width: 80%;
-    height: 450px;
-    display: flex;
-    justify-content: space-around;
-  }
+  position: relative;
+  top: 60px;
+  width: 80%;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  left: 50%;
+  transform: translateX(-50%);
+}
   #article-1 {
     position: relative;
     flex-direction: column;

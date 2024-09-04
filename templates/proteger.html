@@ -1,157 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Centro de Formaci&oacute;n Integral Providencia | Inicio</title>
-    <!-- para video institucional  -->
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
-    <!-- iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- tipo de letra-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Formación Integral Providencia |Proteger </title>
+  
+    
+    <!-- llamado al css-->
+    <link rel="stylesheet" href="/assets/css/unidades-de-negocio.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    
+    <!-- tipografia corporativa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../assets/css/navbar.css">
-    <link rel="stylesheet" href="../assets/css/contacto.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <!--script para reducir el peso del video institucional-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
+  
+    <!-- iconos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
 </head>
+
 <body>
 
-<header >
 
-<nav role="navigation" id="navbar" >
-    <div class="menu-toggle" id="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-   <ul id="menu">
-         <li class="lista-menus">
-            <a href="index.html" class="boton-menu">Inicio</a>
-             <div class="border-lineal"></div>
-        </li>
-       
-        <li class="lista-menus">
-            <a role="button" class="boton-menu" id="nosotros">Sobre nosotros</a>
-            
-            <ul class="lista-sub-menus" id="lista-sobrenosotros">
-                <li >
-                    <a href="historia.html" class="redirrecion-pages">Historia</a>
-                    <a href="equipo.html" class="redirrecion-pages">Equipo</a>
-                    <a href="valores.html" class="redirrecion-pages">Valores</a>
-                    <a href="mision_vision.html" class="redirrecion-pages">Misiòn y visiòn</a>
+
+    
+    <header>
+        <nav role="navigation" id="navbar">
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="menu">
+                <li class="lista-menus">
+                    <a href="index.html" class="boton-menu">Inicio</a>
+                    <div class="border-lineal"></div>
+                </li>
+                <li class="lista-menus">
+                    <a role="button" class="boton-menu" id="nosotros">Sobre nosotros</a>
+                    <ul class="lista-sub-menus" id="lista-sobrenosotros">
+                        <li>
+                            <a href="historia.html" class="redirrecion-pages">Historia</a>
+                            <a href="equipo.html" class="redirrecion-pages">Equipo</a>
+                            <a href="valores.html" class="redirrecion-pages">Valores</a>
+                            <a href="mision_vision.html" class="redirrecion-pages">Misión y visión</a>
+                        </li>
+                    </ul>
+                    <div class="border-lineal"></div>
+                </li>
+                <li class="lista-menus">
+                    <a role="button" class="boton-menu" id="unidades">Unidades de negocio</a>
+                    <div class="border-lineal"></div>
+                    <ul class="lista-sub-menus" id="lista-unidades">
+                        <li>
+                            <a href="proteger.html" class="redirrecion-pages">ProTejer</a>
+                            <a href="renueva.html" class="redirrecion-pages">Renueva</a>
+                            <a href="forma.html" class="redirrecion-pages">Forma</a>
+                            <a href="talleres-industriales.html" class="redirrecion-pages">Talleres Industriales</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-menus">
+                    <a role="button" class="boton-menu" id="obrasocial">Obra social</a>
+                    <div class="border-lineal"></div>
+                    <ul class="lista-sub-menus" id="lista-obrasocial">
+                        <li>
+                            <a href="colegio.html" class="redirrecion-pages">Colegio</a>
+                            <a href="providencia.html" class="redirrecion-pages">Providencia</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lista-menus">
+                    <a role="button" class="boton-menu" href="contactenos.html">Contacto</a>
+                    <div class="border-lineal"></div>
                 </li>
             </ul>
-            <div class="border-lineal"></div> 
-        </li>
+            <figure id="contenedor-logoPrincipal">
+                <a href="contactenos.html">
+                    <img src="../assets/img/logos/logoOficial.png" alt="Centro de Formación Integral Providencia" id="logoPrincipal">
+                </a>
+            </figure>
+            <div id="idioma-container">
+                <a href="index.html" class="bandera">
+                    <img src="../assets/img/banderas/iconColombia.png" alt="Idioma Español">
+                </a>
+                <a href="contactenos.html" class="bandera">
+                    <img src="../assets/img/banderas/iconUsa.png" alt="Idioma Inglés">
+                </a>
+            </div>
+        </nav>
+    </header>
 
-        <li class="lista-menus"> 
-            <a role="button"  class="boton-menu " id="unidades">Unidades de negocio</a>
-            <div class="border-lineal"></div>
-            <ul class="lista-sub-menus" id="lista-unidades">
-                <li >
-                    <a href="proteger.html" class="redirrecion-pages">ProTejer</a>
-                    <a href="renueva.html" class="redirrecion-pages">Renueva</a>
-                    <a href="forma.html" class="redirrecion-pages">Forma</a>
-                    <a href="talleres-industriales.html" class="redirrecion-pages"> Talleres Industriales</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="lista-menus">
-            <a role="button" class="boton-menu" id="obrasocial">Obra social</a>
-            <div class="border-lineal"></div>
-            <ul class="lista-sub-menus" id="lista-obrasocial">
-                <li >
-                    <a href="colegio.html" class="redirrecion-pages">Colegio</a>
-                    <a href="providencia.html" class="redirrecion-pages">Providencia</a>
-                </li>
-            </ul>
-        </li>
-        <li class="lista-menus">
-            <a role="button" class=" boton-menu" href="contactenos.html">Contacto</a>
-            <div class="border-lineal"></div>
-        </li>
-
-    </ul>
-     
-    <figure id="contenedor-logoPrincipal" href="contactenos.html"><img  src="../assets/img/logoOficial.png" alt="" id="logoPrincipal"></figure> 
-    <div id="idioma-container">
-            <a href="index.html" class="bandera"> <img src="../assets/img/banderas/iconColombia.png" /></a>
-
-            <a href="contactenos.html" class="bandera"> <img src="../assets/img/banderas/iconUsa.png" /> </a>
-    </div>
-     
-</nav>
-   
-</header>
-<main >
-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quas. Beatae eveniet distinctio, corporis praesentium illo voluptates sed reiciendis blanditiis laudantium eius quis placeat qui, quisquam voluptas cum ex assumenda.
-  Dolor, possimus fugiat cupiditate laboriosam quis et qui ipsa magnam aliquam obcaecati? Ea voluptates ipsam numquam culpa at in, commodi quia, fugit rem est quaerat, consequuntur provident explicabo excepturi repellendus!
-  Praesentium perferendis non unde porro dignissimos sunt laudantium ad ducimus voluptate. Omnis obcaecati suscipit blanditiis laboriosam officiis quidem, tenetur enim similique porro nisi sit voluptatum possimus! Architecto repellendus illo beatae.
-  Cumque unde ex similique sapiente enim corporis fugiat reiciendis distinctio blanditiis, voluptas quasi, animi consectetur officiis possimus delectus voluptatum! Qui placeat nisi, numquam a laborum ea quaerat iste in mollitia?
-  Exercitationem quibusdam consectetur, provident minima ut similique sunt nulla deserunt vel accusantium cumque debitis! Perferendis dignissimos minus explicabo dolorem sed modi inventore, quibusdam id veniam eligendi enim reiciendis repellat quaerat.
-  Nobis magni quo magnam obcaecati harum natus repudiandae blanditiis vitae quisquam ex voluptate porro excepturi, temporibus delectus non ratione, velit sed repellat est, quasi eum beatae modi! Fugit, architecto impedit.
-  Nemo quam reiciendis modi eius porro possimus corporis, labore quo temporibus nam? Harum nostrum quas ut repudiandae, unde consequatur adipisci atque quo odit nisi, perferendis modi ex laudantium voluptate dolore!
-  Quos, laboriosam fugit cum ipsa atque assumenda. Quos, doloremque! Asperiores a iste cum facere! Quidem itaque, necessitatibus ipsam pariatur odio saepe. Reiciendis, non nam omnis ducimus veritatis officiis consequatur voluptatem.
-  Voluptatibus quibusdam recusandae ex repellat voluptatum cum, saepe obcaecati atque totam nulla itaque aspernatur adipisci ad expedita suscipit molestiae cupiditate a vero culpa praesentium voluptas maxime autem, incidunt voluptate. Doloremque!
-  Harum incidunt sed aliquid itaque illo ipsum tempore numquam rem eaque omnis necessitatibus asperiores mollitia quasi, inventore deleniti ad fugiat veritatis fuga quas cum nisi, perspiciatis corporis voluptatum perferendis? Sunt.
-  Alias perspiciatis, nisi voluptate qui deleniti assumenda soluta nobis ipsum corporis ab voluptatibus distinctio veniam harum quod sed facere iusto dicta voluptas, quo rem. Ratione quis sapiente fugit aperiam ut!
-  Numquam suscipit hic at omnis a asperiores rem quasi odit animi eius ratione nam quas, repudiandae enim totam, quidem eos dolores. Sit cupiditate nulla ipsam quae quia fuga alias optio?
-  Molestiae aliquam magnam dolorem nam commodi eum, rerum, unde itaque velit ut reprehenderit similique? Quia quos suscipit distinctio ducimus quis, atque libero harum placeat ipsum inventore excepturi commodi natus odio!
-  Cum ab magnam fugiat harum quaerat aliquam, facere aut neque eveniet delectus eaque accusamus nemo deserunt vel consequuntur non nihil quisquam molestias, repellat temporibus eos! Aliquid ad nobis unde itaque?
-  Debitis reprehenderit modi ex magnam ut aut ipsum provident molestias impedit repellendus odio laborum, ad maiores voluptate. Eius voluptatum officiis asperiores quasi sunt, quas quis odio natus nihil, ipsa qui!
-  Incidunt sapiente totam tempora doloribus quis vel vitae odit voluptatem possimus tempore, vero sit corporis. Vero, provident voluptatem corrupti veritatis aliquid excepturi impedit. Repudiandae dolor ducimus, reiciendis beatae ad dolorem?
-  Dicta quisquam velit, officia tempora laboriosam minus quidem quos! Perspiciatis cupiditate minima ipsa aliquid expedita aperiam similique unde sequi, optio doloribus omnis eius soluta animi reiciendis deserunt qui facilis eos?
-  Doloremque, molestias, iste modi asperiores numquam, ut quaerat distinctio hic velit suscipit voluptas officia reprehenderit. Maxime ipsum hic, voluptas, quidem perferendis dolores ea laudantium consectetur possimus consequuntur iusto itaque nemo!
-  Laborum dolore repellendus unde libero suscipit dolor, aperiam obcaecati fugit velit asperiores nulla aspernatur sed sunt assumenda sit quam impedit distinctio saepe voluptas officia? Culpa architecto rem provident repellendus cumque.
-  Nemo quia possimus placeat atque asperiores, harum facilis quasi eaque autem rem explicabo pariatur modi minima nobis dolores animi. Mollitia illo ea corporis, delectus voluptatem quam odio itaque voluptas hic?
-</main>
-<footer id="footer">
-    <section id="footer-top">
-        <a href="proteger.html" >ProTejer</a>
-        <a href="renueva.html" >Renueva</a>
-        <a href="forma.html" >Forma</a>
-        <a href="talleres-industriales.html" > Talleres Industriales</a>
-   </section>
- 
-   <section id="footer-center">
-    <article>
-        <figure id="logoPrincipal2">
-            <img src="../assets/img/logocfipblanco.png" alt="Providencia - Centro de Formación Integral"> 
-        </figure>
-    </article>
-
-    <article>
-        <h2>Ubicación</h2>
-        <h2>Km 34 Via Central Cali - El Cerrito, corregimiento El Placer</h2>
-        <h2>PBX: (57)(2) 255 5221 FAX: (57)(2) 255 51 40</h2>
-    </article>
-   </section>
-
-    <section id="footer-bottom">  
-        <p>
-            © Aviso de privacidad, Términos y condiciones. Todos los derechos reservados.
-        </p>
-        <div id="contenedor-iconos">
-            <a href="https://www.instagram.com/providencia.cfi/"><i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://api.whatsapp.com/send?phone=573142526163&text=Hola%2C%20%C2%BFc%C3%B3mo%20est%C3%A1s%3F%20Estoy%20buscando%20dotaci%C3%B3n%20y%20prendas%20de%20moda%2C%20%C2%BFtienes%20algo%20disponible%3F%20%F0%9F%9B%8D%EF%B8%8F">
-                <i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+    <main>
         
-    </section>
-</footer>
+        <section class="section-unidad">
+            <article class="article-unidad-1">
+                <label>En Protejer, nos especializamos en la confección de uniformes industriales, médicos, administrativos y prendas de moda. Operamos con dos plantas de producción, garantizando calidad y eficiencia en cada prenda</label>
+            </article>
+    
+            <article class="article-unidad-2">
+                 <figure class="figure-unidad">
+                    <img src="/assets/img/unidades-negocio/ProTejer.jpg" alt="proceso Forma">
+                 </figure>
+                </article>
+          </section>
 
-<script src="/assets/js/main.js"></script>
+          <section id="section-proteger">
+            <article id="article-proteger1">
+                <p>Dotación de uniformes</p>
+                <label >1.266 m² de espacio dedicado a la confección de uniformes industriales.</label>
+            </article>
+            <article id="article-proteger2">
+                <p>Prendas de moda</p>
+                <label >550 m² de espacio para la confección de prendas de moda.</label>
+            </article>
+            
+            <article id="article-proteger3">
+                <p>Producción</p>
+                <label >Producción de 840.000 prendas anualmente con un total de 24 millones de minutos disponibles.</label>
+            </article>
+          </section>
+        
+    </main>
 
-<script async>
-    (function(w, d) { var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script");
-    s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://app.bluecaribu.com/conversion/integration/eb4ae45110e2b750dfa0f19525dfcb77");
-    h.appendChild(s); })(window, document);
-</script>
+  
+    <footer id="footer">
 
+        <section id="footer-top">
+
+            <a href="proteger.html">Protejer</a>
+
+            <a href="renueva.html">Renueva</a>
+
+            <a href="forma.html">Forma</a>
+
+            <a href="talleres-industriales.html">Talleres Industriales</a>
+
+        </section>
+
+        <section id="footer-center">
+
+            <article>
+
+                <figure id="logoPrincipal2">
+                    <img src="../assets/img/logos/logocfipblanco.png" alt="Providencia - Centro de Formación Integral">
+                </figure>
+
+            </article>
+
+            <article>
+
+                <h2>Ubicación</h2>
+
+                <h2>Km 34 Via Central Cali - El Cerrito, corregimiento El Placer</h2>
+
+                <h2>PBX: (57)(2) 255 5221 FAX: (57)(2) 255 51 40</h2>
+
+            </article>
+        </section>
+
+        <section id="footer-bottom">
+
+            <p>© Aviso de privacidad, Términos y condiciones. Todos los derechos reservados.</p>
+
+            <div id="contenedor-iconos">
+
+                <a href="https://www.instagram.com/providencia.cfi/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://api.whatsapp.com/send?phone=573142526163&text=Hola%2C%20%C2%BFc%C3%B3mo%20est%C3%A1s%3F%20Estoy%20buscando%20dotación%20y%20prendas%20de%20moda%2C%20%C2%BFtienes%20algo%20disponible%3F%20%F0%9F%9B%8D%EF%B8%8F">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/company/providencia-centro-de-formacion-integral-proteje-y-renueva/mycompany/?viewAsMember=true">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
+
+        </section>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
 </body>
+
 </html>
