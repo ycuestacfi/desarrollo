@@ -18,3 +18,8 @@ section p{
 section label{
     font-size: 17px;
 }
+@media screen and (min-width:800px) and (max-width:1010px)  {
+    .section-mision-vision {
+        top: 15%;
+      }
+}

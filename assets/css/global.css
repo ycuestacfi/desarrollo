@@ -7,7 +7,7 @@
 * {
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
-    font-size: 16px;
+    font-size: 17px;
     font-family: "Inter", sans-serif;
 }
 
@@ -40,7 +40,43 @@ main {
     padding-top: 150px;
    
 }
-
+#loader-page-container{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: var(--blanco);
+    top: 0px;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#loader-page{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-top: solid 3px var(--verde-corporativo);
+    border-radius: 50%;
+    z-index: 200;
+    animation: cargando-page 0.5s ease-in-out infinite;
+    
+}
+@keyframes cargando-page{
+    0% {
+        
+        transform: rotate(0deg);
+      }
+      100% {
+        
+        transform: rotate(360deg);
+      }
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
 /* Estilos para el navbar */
 
 #navbar {
@@ -204,6 +240,7 @@ main {
     color: var(--blanco);
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
   }
   .btn_saber_mas_paginas:hover{
     color: var(--azul-oscuro-contraste);
@@ -287,69 +324,34 @@ height: 60%;
     padding-bottom: 10px ;
 }
 
-@media screen and (max-width: 700px) {
-    #footer-top {
-        display: flex;
-        justify-content: space-evenly;
-        width: 80%;
-        padding: 4px 0 4px 0;
-        border-bottom: solid 1px var(--blanco);
-      }
-    #footer-top a {
-        text-decoration: none;
-        font-size: 10px;
-        color: var(--blanco);
-      }
-      #footer-center {
-        height: 60%;
-        position: relative;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-      }
-      #footer-center article {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        color: var(--blanco);
-        text-align: center;
-      }
-      #footer-center article h2{
-        font-size: 10px;
-        margin:0 ;
-      }
-      #logoPrincipal2 {
-        margin: 0;
-        height: 60%;
-        padding: 0;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-      }
-      #footer-bottom {
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        background-color: #333533;
-        color: var(--blanco);
-      }
-      #footer-bottom p{
-        font-size: 12px;
-        text-align: center;
-        padding: 10px;
-      }
-      @media screen and (min-width:800px) {
-        
 
-      }
+
+      
      
     
-}
+
 
 /* Media Queries */
-@media screen and (max-width: 800px)  {
+@media screen and (min-width:800px) and (max-width:1010px) {
+    .btn_saber_mas_paginas{
+        padding: 15px;
+        font-size: 17px;
+        background-color: var(--azul-oscuro-contraste);
+        width: 20%;
+        height: 50px;
+        top: 35%;
+        left: 80%;
+        border-radius: 0;
+        position: relative;
+
+    }
+}
+
+
+@media screen and (max-width: 1010px)  {
+    #navbar{
+        height: 12%;
+    }
     #menu-toggle.active{
         z-index: 200;
         display: flex;
@@ -454,5 +456,60 @@ height: 60%;
         width: 40px;
         margin-bottom: 5px;
     }
+
+
+    /* media del footer*/
+    #footer-top {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        padding: 4px 0 4px 0;
+        border-bottom: solid 1px var(--blanco);
+      }
+    #footer-top a {
+        text-decoration: none;
+        font-size: 10px;
+        color: var(--blanco);
+      }
+      #footer-center {
+        height: 60%;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #footer-center article {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: var(--blanco);
+        text-align: center;
+      }
+      #footer-center article h2{
+        font-size: 10px;
+        margin:0 ;
+      }
+      #logoPrincipal2 {
+        margin: 0;
+        height: 60%;
+        padding: 0;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+      }
+      #footer-bottom {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        background-color: #333533;
+        color: var(--blanco);
+      }
+      #footer-bottom p{
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+      }
 }
 

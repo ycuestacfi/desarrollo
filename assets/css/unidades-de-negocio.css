@@ -114,3 +114,42 @@
 
 
 /* css de renueva*/
+
+
+
+/*media Querys*/
+
+/*ProTeger*/
+@media screen and (min-width:800px) and (max-width:1010px) {
+    .section-unidad{
+        top: 0;
+        height: 40%;
+    }
+    
+    .article-unidad-1{
+        width: 35%;
+    }
+    .article-unidad-2{
+        height: 100%;
+        width: 65%;
+        padding-left: 10px;
+    }
+    #section-proteger{
+        top: 10px;
+    }
+    #section-talleres{
+        top: 30px;
+    }
+    .figure-unidad img {
+        width: 100%;
+      }
+      #talleres {
+        width: 65%;
+      }
+      #forma{
+        height: 70%;
+      }
+      #renueva{
+        height: 70%;
+      }
+}
