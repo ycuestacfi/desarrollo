@@ -65,6 +65,7 @@
     #info-hitos {
       height: 60%;
       width: 100%;
+      padding-top: 40px;
     }
     #historia {
       font-size: 17px;
@@ -76,7 +77,10 @@
       margin: 0;
       padding: 0;
       position: relative;
-      top: 20px;
+      top: 0;
+    }
+    #img-historia {
+      width: 100%;
     }
     #section-historia {
       position: relative;

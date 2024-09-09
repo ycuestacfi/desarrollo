@@ -252,7 +252,7 @@ main {
 
 /* Contenido de footer */
 #footer{
-    margin-top: 1%;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -335,6 +335,21 @@ height: 60%;
 
 
 /* Media Queries */
+@media screen and (max-width:800px){
+    main{
+        padding-top: 100px;
+    }
+    .btn_saber_mas_paginas{
+        width: 30%;
+        height: 40px;
+        font-size: 12px;
+        top: 49%;
+        border-radius: 0 0 0 25px;
+        background-color: var(--azul-oscuro-contraste);
+    }
+}
+
+
 @media screen and (min-width:800px) and (max-width:1010px) {
     .btn_saber_mas_paginas{
         padding: 15px;
@@ -344,7 +359,7 @@ height: 60%;
         height: 50px;
         top: 35%;
         left: 80%;
-        border-radius: 0;
+        border-radius: 0 0 0 25px;
         position: relative;
 
     }

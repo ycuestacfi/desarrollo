@@ -18,6 +18,32 @@ section .p-section{
 section label{
     font-size: 17px;
 }
+
+
+@media screen and (max-width:800px){
+    .section-mision-vision {
+        width: 80%;
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        left: 50% !important;
+        transform: translateX(-50%);
+      }
+    #section-mision{
+        height: 32%;
+    }
+    #section-mision p{
+        margin-top: 0;
+    }
+    #section-vision{
+        height: 60%;
+    }
+    #section-vision p{
+        margin-top: 0;
+    }
+}
+
 @media screen and (min-width:800px) and (max-width:1010px)  {
     .section-mision-vision {
         top: 15%;

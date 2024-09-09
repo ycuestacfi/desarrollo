@@ -68,6 +68,30 @@
     color: var(--azul-oscuro-contraste);
     box-shadow: 0px 5px 0px var(--azul-oscuro-contraste);
 }
+
+@media screen and (max-width:800px){
+  #section-contacto{
+    justify-content: normal;
+    flex-direction: column;
+    top: 0;
+    height: auto;
+  }
+  #article-1{
+    width: 100%;
+    border: none;
+  }
+  #article-2{
+    width: 100%;
+  }
+  #button-enviar-contacto{
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 25px;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 @media screen and (orientation: landscape){
   #section-contacto{
     height: 75%;

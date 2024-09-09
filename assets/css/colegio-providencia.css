@@ -25,9 +25,9 @@
 }
 #section-colegio-providencia-2 article p{
     text-align: center;
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--azul-oscuro-contraste);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--azul-oscuro-contraste);
 }
 #section-colegio-providencia-2article:nth-child(1){
     left: 0;
@@ -44,6 +44,15 @@
     transform: translateX(-50%);
     background-color: var(--verde-corporativo);
 
+}
+
+@media screen and (max-width:800px){
+    #section-colegio-providencia-2{
+        padding: 10px;
+        width: 95%;
+        height: 400px;
+        top: 40px;
+    }
 }
 
 @media screen and (min-width:1300px) and (max-width:1600px){

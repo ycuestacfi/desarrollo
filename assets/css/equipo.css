@@ -51,7 +51,34 @@
 
 
 @media screen and (max-width:700px){
-
+  #section-equipo{
+    top: 0;
+    height: 95%;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+  #article-equipo-1{
+    width: 100%;
+    height: 50%;
+  }
+  #article-equipo-1 figure img {
+    width: 100%;
+  }
+  #article-equipo-2{
+    width: 100%;
+    height: 45%;
+    border-left:none ;
+    border-bottom: solid 2px var(--verde-corporativo);
+    padding: 0;
+  }
+  #article-equipo-2 h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  #article-equipo-2 p{
+    font-size: 17px;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width:800px) and (max-width:1010px) {
