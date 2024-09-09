@@ -135,7 +135,7 @@
         margin: 0;
         padding: 0;
         position: relative;
-        top: 130px;
+
       }
       #banner-1 {
         height: 50%;
@@ -239,7 +239,7 @@
       }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1010px){
+@media screen and (min-width: 701px) and (max-width: 1010px){
 #section-principal {
     height: 250px;
     width: 80%;
@@ -341,4 +341,17 @@
     display: flex;
     padding: 40px;
   }
+}
+@media screen and (orientation: landscape){
+  #section-principal{
+    height: 25%;
+  }
+}
+@media screen and(min-width:1300px) and (max-width:1600px) {
+  #banner-2 a{
+    height: 50px;
+    width: 15%;
+  }
+  
+  
 }

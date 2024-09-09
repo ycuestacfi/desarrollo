@@ -17,6 +17,7 @@
     --azul-oscuro-contraste: #002A3F;
     --blanco: #FFFFFF;
     --blanco-segundario: #f9f9f9;
+    --gris-fondo:#333531;
 }
 
 body, html {
@@ -106,6 +107,7 @@ main {
     height: 80%;
     margin: 0;
     top: 10%;
+    filter: drop-shadow(10px 7px 10px var(--verde-corporativo));
 }
 
 #contenedor-logoPrincipal #logoPrincipal {
@@ -300,6 +302,7 @@ height: 60%;
     padding: 0;
     position: relative;
     top: 5px;
+    filter: drop-shadow(10px 7px 10px var(--gris-fondo));
 }
 
 #logoPrincipal2 img {
@@ -310,7 +313,7 @@ height: 60%;
   flex-direction: column;
   display: flex;
   align-items: center;
-  background-color: #333533;
+  background-color: var(--gris-fondo);
   color: var(--blanco);
 }
 #contenedor-iconos{
@@ -319,7 +322,7 @@ height: 60%;
   display: flex;
 }
 #contenedor-iconos a i{
-    font-size: 30px;
+    font-size: 35px;
     color: var(--blanco);
     padding-bottom: 10px ;
 }
@@ -513,3 +516,11 @@ height: 60%;
       }
 }
 
+@media screen and (min-width:1300px) and (max-width:1600px) {
+    #menu {left: 35%;}
+    .boton-menu{
+        font-size: 16px;
+        font-weight: 800;
+    }
+  
+}

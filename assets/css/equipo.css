@@ -27,6 +27,7 @@
   }
   #article-equipo-1 figure img{
     height: 100%;
+    
   }
   #article-equipo-2 {
     position: relative;
@@ -46,6 +47,11 @@
 #article-equipo-2 p{
     font-size: 20px;
     font-weight: 450;
+}
+
+
+@media screen and (max-width:700px){
+
 }
 
 @media screen and (min-width:800px) and (max-width:1010px) {
@@ -82,4 +88,16 @@
   margin: 0;
   }
 
+}
+
+@media screen and (min-width:1300px) and (max-width:1600px) {
+  #article-equipo-1{
+    width: 60%;
+  }
+  #article-equipo-2{
+    width: 35%;
+  }
+  #article-equipo-1 figure img {
+    width: 100%;
+  }
 }

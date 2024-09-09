@@ -30,6 +30,7 @@
 }
 .figure-unidad img{
     height: 100%;
+    width: 100%;
 }
 #talleres{
     width: 50%;
@@ -147,9 +148,40 @@
         width: 65%;
       }
       #forma{
-        height: 70%;
+        height: 45%;
+        
       }
       #renueva{
-        height: 70%;
+        height: 45%;
+        
+      }
+}
+
+@media screen and (min-width:1300px) and (max-width:1600px) {
+    .section-unidad{
+        top: 5%;
+        height: 40%;
+    }
+    
+    .article-unidad-1{
+        width: 35%;
+    }
+    .article-unidad-2{
+        height: 100%;
+        width: 65%;
+        padding-left: 10px;
+    }
+    .figure-unidad img {
+        width: 100%;
+      }
+      #talleres {
+        width: 65%;
+      }
+      #forma{
+        height: 60%;
+      }
+      #renueva{
+        height: 60%;
+        top: 50px;
       }
 }
