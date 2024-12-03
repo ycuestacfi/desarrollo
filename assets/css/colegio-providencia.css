@@ -1,0 +1,66 @@
+#section-colegio-providencia-1{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+#section-colegio-providencia-2{
+    
+    position: relative;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 300px;
+    border: solid 2px var(--verde-corporativo);
+    padding: 20px;
+    display: inline-flex;
+    
+}
+#section-colegio-providencia-2 article{
+    width: 50%;
+    height: 100%;
+    padding: 8px;
+}
+#section-colegio-providencia-2 article p{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--azul-oscuro-contraste);
+}
+#section-colegio-providencia-2article:nth-child(1){
+    left: 0;
+    top: 0;
+}
+#section-colegio-providencia-2article:nth-child(2){
+    right: 0;
+    top: 0;
+}
+#section-colegio-providencia-2 div{
+    position: relative;
+    height: 100%;
+    width: 3px;
+    transform: translateX(-50%);
+    background-color: var(--verde-corporativo);
+
+}
+
+@media screen and (max-width:800px){
+    #section-colegio-providencia-2{
+        padding: 10px;
+        width: 95%;
+        height: 400px;
+        top: 40px;
+    }
+}
+
+@media screen and (min-width:1300px) and (max-width:1600px){
+    #section-colegio-providencia-2{
+        top: 200px;
+    }
+    #section-colegio-providencia-1{
+        top: 70px;
+        text-align: center;
+    }
+}

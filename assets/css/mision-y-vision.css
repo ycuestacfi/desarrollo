@@ -1,0 +1,58 @@
+.section-mision-vision{
+    width: 40%;
+    height:20px ;
+    position: absolute;
+    top: 200px;
+}
+#section-mision{
+    left: 4%;
+}
+#section-vision{
+    left: 55%;
+}
+section .p-section{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+section label{
+    font-size: 17px;
+}
+
+
+@media screen and (max-width:800px){
+    .section-mision-vision {
+        width: 80%;
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        left: 50% !important;
+        transform: translateX(-50%);
+      }
+    #section-mision{
+        height: 32%;
+    }
+    #section-mision p{
+        margin-top: 0;
+    }
+    #section-vision{
+        height: 60%;
+    }
+    #section-vision p{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1010px)  {
+    .section-mision-vision {
+        top: 15%;
+      }
+}
+@media screen and (min-width:1300px) and (max-width:1600px) {
+    .section-mision-vision{
+        top: 270px;
+    }
+   
+    
+}

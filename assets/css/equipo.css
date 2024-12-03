@@ -1,0 +1,130 @@
+#section-equipo{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: 60px;
+    width: 80%;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+
+}
+#article-equipo-1 {
+    position: relative;
+    width: 45%;
+    height: 100%;
+  }
+  #article-equipo-1 figure {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+  }
+  #article-equipo-1 figure img{
+    height: 100%;
+    
+  }
+  #article-equipo-2 {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    border-left: solid 2px var(--verde-corporativo);
+    padding-left: 40px;
+  }
+
+#article-equipo-2 h2{
+    color: var(--verde-corporativo);
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#article-equipo-2 p{
+    font-size: 20px;
+    font-weight: 450;
+}
+
+
+@media screen and (max-width:700px){
+  #section-equipo{
+    top: 0;
+    height: 95%;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+  #article-equipo-1{
+    width: 100%;
+    height: 50%;
+  }
+  #article-equipo-1 figure img {
+    width: 100%;
+  }
+  #article-equipo-2{
+    width: 100%;
+    height: 45%;
+    border-left:none ;
+    border-bottom: solid 2px var(--verde-corporativo);
+    padding: 0;
+  }
+  #article-equipo-2 h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  #article-equipo-2 p{
+    font-size: 17px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width:800px) and (max-width:1010px) {
+  #section-equipo{
+    height: 85%;
+    flex-direction: column-reverse;
+    top: 0;
+    justify-content: space-between;
+
+  }
+  #article-equipo-1{
+    width: 100%;
+    height: 65%;
+  }
+  #article-equipo-1 figure{
+    width: 100%;
+  }
+  #article-equipo-1 figure img {
+    width: 100%;
+  }
+
+  #article-equipo-2{
+    padding: 0;
+    width: 100%;
+    height: 25%;
+    border: none;
+    border-bottom: solid 2px var(--verde-corporativo);
+    bottom: 25px;
+  }
+  #article-equipo-2 h2{
+    margin: 0 0 10px 0;
+  }
+  #article-equipo-2 p{
+  margin: 0;
+  }
+
+}
+
+@media screen and (min-width:1300px) and (max-width:1600px) {
+  #article-equipo-1{
+    width: 60%;
+  }
+  #article-equipo-2{
+    width: 35%;
+  }
+  #article-equipo-1 figure img {
+    width: 100%;
+  }
+}

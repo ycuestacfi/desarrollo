@@ -1,0 +1,458 @@
+/* navbar.css */
+
+/* Importar CSS externo */
+@import url(../scss/icons/font-awesome/css/font-awesome.min.css);
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+/* Variables de color */
+:root {
+    --verde-corporativo: #72BE44;
+    --azul-oscuro-contraste: #002A3F;
+    --blanco: #FFFFFF;
+    --blanco-segundario: #f9f9f9;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--blanco);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 14% 1fr 220px;
+    
+}
+
+main {
+   
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 150px;
+   
+}
+
+/* Estilos para el navbar */
+
+#navbar {
+    background-color: var(--blanco);
+    height: 14%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#navbar::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    border-bottom: 2px solid var(--verde-corporativo);
+}
+
+/* Logos */
+#contenedor-logoPrincipal {
+    position: absolute;
+    left: 8%;
+    height: 80%;
+    margin: 0;
+    top: 10%;
+}
+
+#contenedor-logoPrincipal #logoPrincipal {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* Iconos de certificación y banderas de idioma */
+
+
+#idioma-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-decoration: none;
+}
+
+#idioma-container .bandera > img {
+    height: 20px;
+    width: 30px;
+    margin-left: 5px;
+}
+
+/* Menú */
+#menu {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 55%;
+    z-index: 100;
+    left: 28%;
+    bottom: 0;
+    justify-content: space-evenly;
+}
+
+#menu .lista-menus {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 30%;
+    font-weight: 600;
+}
+
+.border-lineal {
+    width: 30px;
+    border: solid 2px var(--verde-corporativo);
+    transform: rotate(-65deg);
+}
+
+.boton-menu {
+    text-decoration: none;
+    outline: none;
+    color: var(--verde-corporativo);
+    border: none;
+    cursor: pointer;  
+    font-size: 22px;
+}
+
+.boton-menu:hover {
+    background-color: var(--verde-corporativo);
+    color: var(--blanco);
+    transform: skewX(-25deg);
+    width: 100%;
+    height: 20%;
+    padding: 0px 0px 0px 4px;
+}
+
+.lista-sub-menus {
+    text-decoration: none;
+    position: absolute;
+    align-content: space-between;
+    list-style-type: none;
+    flex-direction: column;
+    top: 85%;
+    width: 100%;
+    padding: 4px;
+}
+
+#lista-unidades,
+#lista-obrasocial,
+#lista-sobrenosotros {
+    display: none;
+    right: 20px;
+}
+
+.lista-sub-menus li {
+    flex-direction: column;
+    display: inline-flex;
+    text-align: center;
+    position: relative;
+    top: 100%;
+    width: 100%;
+}
+
+.lista-sub-menus .redirrecion-pages {
+    text-decoration: none;
+    outline: none;
+    color: var(--blanco);
+    background-color: var(--azul-oscuro-contraste);
+    margin-bottom: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.redirrecion-pages:hover {
+    background-color: var(--verde-corporativo);
+    color: var(--blanco);
+    margin-top: 5px;
+    transform: skewX(-25deg);
+    height: 25%;
+    padding: 3px;
+}
+/* boton de saber mas de las interfaces*/
+
+.btn_saber_mas_paginas {
+    background-color: var(--verde-corporativo);
+    width: 15%;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    right: 0;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 22px;
+    color: var(--blanco);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn_saber_mas_paginas:hover{
+    color: var(--azul-oscuro-contraste);
+    box-shadow: 0px 5px 0px var(--azul-oscuro-contraste);
+}
+
+
+/* Contenido de footer */
+#footer{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 220px;
+    background-color: var(--verde-corporativo);
+}
+#footer-top{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 40%;
+    padding: 4px 0 4px 0;
+    border-bottom:solid 1px var(--blanco);
+
+}
+#footer-top a{
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--blanco);
+}
+#footer-top a:hover{
+    background-color: var(--azul-oscuro-contraste);
+    transform: skewX(-20deg);
+    padding: 4px;
+    scale: 1.1;
+}
+#footer-center{
+height: 60%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+#footer-center article{
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--blanco);
+}
+#logoPrincipal2 {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    top: 5px;
+}
+
+#logoPrincipal2 img {
+    height: 100%;
+}
+#footer-bottom{
+    width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background-color: #333533;
+  color: var(--blanco);
+}
+#contenedor-iconos{
+    width: 300px;
+  justify-content: space-between;
+  display: flex;
+}
+#contenedor-iconos a i{
+    font-size: 30px;
+    color: var(--blanco);
+    padding-bottom: 10px ;
+}
+
+@media screen and (max-width: 700px) {
+    #footer-top {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        padding: 4px 0 4px 0;
+        border-bottom: solid 1px var(--blanco);
+      }
+    #footer-top a {
+        text-decoration: none;
+        font-size: 10px;
+        color: var(--blanco);
+      }
+      #footer-center {
+        height: 60%;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #footer-center article {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: var(--blanco);
+        text-align: center;
+      }
+      #footer-center article h2{
+        font-size: 10px;
+        margin:0 ;
+      }
+      #logoPrincipal2 {
+        margin: 0;
+        height: 60%;
+        padding: 0;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+      }
+      #footer-bottom {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        background-color: #333533;
+        color: var(--blanco);
+      }
+      #footer-bottom p{
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+      }
+      @media screen and (min-width:800px) {
+        
+
+      }
+     
+    
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px)  {
+    #menu-toggle.active{
+        z-index: 200;
+        display: flex;
+        flex-direction: column;
+        left: 80%;
+    }
+    #menu-toggle.active .bar:nth-child(1){
+        opacity: 0;
+        margin: 0;
+    }
+    #menu-toggle.active .bar:nth-child(2){
+        position: relative;
+        transform: rotate(45deg);
+        top: 8px;
+        margin: 0;
+    }
+    #menu-toggle.active .bar:nth-child(3){
+        transform:rotate(-45deg) ;
+        margin: 0;
+    }
+    
+    #menu.active {
+        display: flex;
+        opacity: 1;
+    }
+    #menu{
+
+        list-style-type: none;
+        display: none;
+        position: relative;
+        height: 100vh;
+        padding: 8px;
+        margin: 0;
+        width: 100%;
+        z-index: 150;
+        background-color: #1A2019C7;
+        flex-direction: column;
+        justify-content: flex-start;
+        opacity: 0;
+        left: 0;
+
+    }
+    #menu .lista-menus {
+        position: relative;
+        display: flex;
+        align-items: center;
+        top: 10%;
+        font-weight: 600;
+        margin-bottom: 16px;
+        padding: 8px;
+        width: 100%;
+      }
+      .boton-menu {
+        text-decoration: none;
+        outline: none;
+        color: var(--blanco);
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+      }
+      .border-lineal{
+        display: none;
+      }
+      .lista-sub-menus {
+        text-decoration: none;
+        position: absolute;
+        align-content: space-between;
+        list-style-type: none;
+        top: 75%;
+        width: 50%;
+        padding: 10px;
+        background-color: var(--blanco);
+        border-radius: 0 25px 25px 25px;
+        z-index: 200;
+      }
+      #lista-unidades, #lista-obrasocial, #lista-sobrenosotros {
+        display: none;
+        left: 45%;
+      }
+
+    
+    #contenedor-logoPrincipal {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .menu-toggle {
+        display: block;
+        margin: 0;
+        padding: 0;
+        left: 5%;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 70%;
+        transform: translateY(-50%);
+    }
+    .bar{
+        background-color: var(--verde-corporativo);
+        display: flex;
+        height: 8px;
+        width: 40px;
+        margin-bottom: 5px;
+    }
+}
+
